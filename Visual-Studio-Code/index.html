@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code - Code Editing. Redefined.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://code.visualstudio.com/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://code.visualstudio.com/favicon.ico" alt="VS Code Logo">
+                <span>Visual Studio Code</span>
+            </div>
+            <ul>
+                <li><a href="/">Docs</a></li>
+                <li><a href="/">Updates</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/">API</a></li>
+                <li><a href="/">Extensions</a></li>
+                <li><a href="/">FAQ</a></li>
+                <li><a href="/">GitHub Copilot</a></li>                
+            </ul>
+            <ul>
+              <li><a href="#" id="theme-toggle"><i class="fas fa-sun"></i></a></li>
+              <li class="search-container">
+                  <input type="text" placeholder="Search Docs">
+                  <i class="fas fa-search"></i>
+              </li>
+              <li><a href="/" class="download-btn">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+      <div class="banner-content">
+          <p id="message">
+              <a href="/">Version 1.82</a> is now available! Read about the new features and fixes from July.
+          </p>
+      </div>
+      <button>x</button>
+  </div>  
+    <main>
+        <section class="hero">
+            <h1>Code faster with AI</h1>
+            <p>Visual Studio Code with GitHub Copilot supercharges your <br>code with AI-powered suggestions, right in your editor.</p>
+            <div class="cta-buttons">
+                <a href="/" class="download-btn1">Download for Windows</a>
+                <a href="/" class="try-btn">Try GitHub Copilot</a>
+            </div>
+            <img src="https://code.visualstudio.com/assets/home/home-screenshot-copilot.png" alt="VS Code Screenshot" class="hero-image">
+        </section>
+
+        <section class="features">
+          <div class="feature-content">
+              <div class="feature-text">
+                  <h2>Code with GitHub Copilot</h2>
+                  <p class="feature-description">Write code faster and smarter with GitHub <br>
+                    Copilot, your AI pair programmer.</p>
+                    <br>
+                  <a href="/" class="try-link">Try GitHub Copilot free for 30 days</a>
+                  <div class="feature-list">
+                      <p>
+                          <a href="#"><strong>Completions</strong></a> present suggestions automatically <br> to help you code more efficiently.
+                      </p>
+                      <br>
+                      <p>
+                          <a href="#"><strong>Copilot Chat</strong></a> understands the context of your <br> code, workspace, extensions, settings, and more.
+                      </p>
+                      <br>
+                      <p>
+                          <a href="#"><strong>Inline Chat</strong></a> enables you to iteratively generate <br> edits and get answers to quick questions, directly<br> on your code.
+                      </p>
+                  </div>
+              </div>
+              <div class="feature-image">
+                  <img src="https://code.visualstudio.com/assets/home/swimlane-copilot.png" alt="GitHub Copilot">
+              </div>
+          </div>
+      </section>
+      
+
+      <section class="languages">
+        <div class="languages-description">
+        <h2>Code in any language</h2>
+        <p class="section-description">
+            VS Code supports almost every major programming language. Several ship in the box, 
+            like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS 
+            Code Marketplace.
+        </p>
+      </div>
+        <div class="language-grid">
+            <div class="lang-item">
+                <span class="lang-icon js">JS</span>
+                <span class="lang-name">JavaScript</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon ts">TS</span>
+                <span class="lang-name">TypeScript</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon py">PY</span>
+                <span class="lang-name">Python</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon csharp">C#</span>
+                <span class="lang-name">C#</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon cpp">C++</span>
+                <span class="lang-name">C++</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon html">&lt;&gt;</span>
+                <span class="lang-name">HTML</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon java">J</span>
+                <span class="lang-name">Java</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon json">{}</span>
+                <span class="lang-name">JSON</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon php">PHP</span>
+                <span class="lang-name">PHP</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon md">MD</span>
+                <span class="lang-name">Markdown</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon ps">PS</span>
+                <span class="lang-name">PowerShell</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-icon yaml">Y</span>
+                <span class="lang-name">YAML</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="extensions">
+      <div class="extensions-content">
+          <div class="extension-text">
+              <h2>Code with Extensions</h2>
+              <p class="section-description">
+                  Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of 
+                  extensions to power up your VS Code experience.
+              </p>
+              <a href="#" class="learn-more">Learn more about extensions</a>
+          </div>
+          <div class="extension-grid">
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/python-extension.png" alt="Python" class="extension-icon">
+                  <h3>Python</h3>
+                  <p>Adds rich language support for Python</p>
+              </div>
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/copilot-extension.png" alt="GitHub Copilot" class="extension-icon">
+                  <h3>GitHub Copilot</h3>
+                  <p>Your AI pair programmer</p>
+              </div>
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/c-extension.png" alt="C/C++" class="extension-icon">
+                  <h3>C/C++</h3>
+                  <p>Adds rich language support for C/C++</p>
+              </div>
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/jupyter-extension.png" alt="Jupyter" class="extension-icon">
+                  <h3>Jupyter</h3>
+                  <p>Language support for Jupyter Notebooks</p>
+              </div>
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/gitlens-extension.png" alt="GitLens" class="extension-icon">
+                  <h3>GitLens</h3>
+                  <p>Supercharge your Git experience</p>
+              </div>
+              <div class="extension-card">
+                  <img src="https://code.visualstudio.com/assets/images/cs-dev-kit-extension.png" alt="C# Dev Kit" class="extension-icon">
+                  <h3>C# Dev Kit</h3>
+                  <p>Powerful tools for your C# environment</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://code.visualstudio.com/favicon.ico" alt="VS Code Logo">
+                <span>Visual Studio Code</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="/">Downloads</a></li>
+                        <li><a href="/">Updates</a></li>
+                        <li><a href="/">Telemetry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/">Documentation</a></li>
+                        <li><a href="/">API</a></li>
+                        <li><a href="/">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="/">Twitter</a></li>
+                        <li><a href="/">GitHub</a></li>
+                        <li><a href="/">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Microsoft. All rights reserved.</p>
+            <ul>
+                <li><a href="/">Privacy</a></li>
+                <li><a href="/">Terms of Use</a></li>
+                <li><a href="/">License</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
