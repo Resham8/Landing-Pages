@@ -112,15 +112,15 @@ nav ul li a {
 
 #banner {
   display: flex;
-  justify-content: center;  /* Center the banner content */
+  justify-content: center; 
   align-items: center;
   padding: 10px;
-  position: relative;  /* For positioning the close button */
+  position: relative; 
   background-color: var(--background-color);  
 }
 
 .banner-content {
-  text-align: center;  /* Center the text inside */
+  text-align: center;  
 }
 
 #banner p {
@@ -144,8 +144,6 @@ nav ul li a {
   padding: 0;
   position: absolute;  
   right: 15px;        
-  /* top: 50%;           */
-  /* transform: translateY(-50%); */
 }
 
 main {
@@ -271,9 +269,9 @@ h2 {
 
 .language-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-  gap: 1rem; /* Space between grid items */
-  margin-top: 2rem; /* Add some space above the grid */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; 
+  margin-top: 2rem;
 }
 
 .lang-item {
@@ -292,13 +290,12 @@ h2 {
   border-radius: 6px;
   font-weight: bold;
   font-size: 0.9rem;
-  margin-right: 8px; /* Space between icon and name */
+  margin-right: 8px;
 }
 
-/* Optional: Add responsive design for smaller screens */
 @media (max-width: 768px) {
   .language-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      grid-template-columns: repeat(2, 1fr); 
   }
 }
 .lang-icon {
@@ -318,7 +315,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* Specific language icon colors */
 .js { color: #f7df1e; }
 .ts { color: #007acc; }
 .py { color: #3776ab; }
