@@ -4,6 +4,8 @@
     --text-color: #424242;
     --nav-text-color: #666;
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --footer-bg: #fbfbfb;
+    --border-color: #eee;
 }
 
 body {
@@ -154,5 +156,199 @@ footer{
 
     h2 {
         font-size: 1.125rem;
+    }
+}
+/* Trust section */
+.trust-section {
+    margin: 100px 220px;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.trust-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.trust-item {
+    margin-bottom: 20px;
+}
+
+.ecosystem-image {
+    width: 623px;
+    max-width: 100%;
+}
+
+.ecosystem-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.ecosystem-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.press-logos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pricing-section {
+    margin: 100px 200px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.pricing-features {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pricing-item img {
+    width: 120px;
+    padding-top: 50px;
+}
+
+.pricing-item p {
+    font-size: 10px;
+    padding-top: 80px;
+    margin-left: -20px;
+}
+
+/* Education section */
+.education-section {
+    margin: 100px 200px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.education-image img {
+    width: 433px;
+    max-width: 100%;
+}
+
+.education-content h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.education-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.education-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.signup-section {
+    margin: 100px;
+}
+
+.signup-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.signup-content h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.signup-content p {
+    margin-bottom: 2rem;
+    color: var(--nav-text-color);
+}
+
+.signup-content .signup-btn {
+    width: fit-content; 
+    margin: 0 auto; 
+    padding: 0.75rem 2rem; 
+    font-size: 1rem; 
+}
+
+.footer-brand {
+    padding-top: 50px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li:hover {
+    margin-bottom: 10px;
+    color: #387ed1;
+}
+
+@media (max-width: 1200px) {
+    .trust-section,
+    .pricing-section,
+    .education-section {
+        margin: 100px 50px;
+    }
+
+    .ecosystem-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .trust-grid,
+    .pricing-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-features {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
