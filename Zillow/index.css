@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-logo img {
+  height: 30px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(-50%);  
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 72px;
+  white-space: pre-line;
+}
+
+.search-box {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.search-box input:focus {
+    border: none;
+}
+
+.recomdation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+.rec-text{
+    flex: 1;
+    max-width: 500px;
+}
+
+.rec-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.rec-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.rec-img{
+    flex: 1;
+    max-width: 500px;
+}
+
+.rec-text button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 2px solid blue;
+    color: blue;
+    background: none;
+    cursor: pointer;
+}
+
+.rec-text button:hover {
+   
+    background: rgba(135, 146, 231,0.2);
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2),0 17px 70px 0 rgba(0,0,0,0.2);
+}
+
+.rec-img img {
+    width: 100%; 
+    max-width: 400px;
+    border-radius: 10px;
+}
