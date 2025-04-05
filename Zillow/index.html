@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zillow</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
   </head>
   <body>
     <nav>
@@ -35,7 +36,8 @@
         alt="Hero Image"
       />
       <div class="hero-content">
-        <h1>Agents. Tours. Loans. Homes.</h1>
+        <h1>Agents. Tours.
+          Loans. Homes.</h1>
         <div class="search-box">
           <input type="search" placeholder="Search for homes..." />
         </div>
@@ -46,7 +48,7 @@
       <div class="rec-text">
         <h1>Get home recommendations</h1>
         <p>Sign in for a more personalized experience.</p>
-        <button>Sign in</button>
+        <button class="btn">Sign in</button>
       </div>
       <div class="rec-img">
         <img
@@ -55,31 +57,471 @@
         />
       </div>
     </section>
-    <section class="container">
-    <h1>Find homes you can afford with BuyAbility<sup>SM</sup></h1>
-    <p class="subtitle">Answer a few questions. We'll highlight homes you're likely to qualify for.</p>
+    <div class="container">
+      <h1>Find homes you can afford with BuyAbility<sup>SM</sup></h1>
+      <p class="subtitle">
+        Answer a few questions. We'll highlight homes you're likely to qualify
+        for.
+      </p>
 
       <div class="main-content">
-        <div class="info-card">
-          <div class="loan-card">
-            <div>
-                <img
-              src="data:image/png;base64,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"
-              alt=""
-            />
-            </div>
-            <div>
-                <span>$ - -
-                    Suggested target price</span>
-                
-<span>$ - -
-    BuyAbility℠</span>
-            </div>
+        <div class="card">
+          <div class="zillow-logo">
+            Zillow
+            <span style="color: #006aff; margin-left: 5px">Home Loans</span>
+          </div>
 
+          <div class="price-section">
+            <div class="price-item">
+              <div class="price-value">$ --</div>
+              <div class="price-label">Suggested target price</div>
+            </div>
+            <div class="price-item">
+              <div class="price-value">$ --</div>
+              <div class="price-label">BuyAbility<sup>SM</sup></div>
+            </div>
+          </div>
+
+          <div class="data-row">
+            <div class="data-item">
+              <div class="price-value">$ --</div>
+              <div class="price-label">Mo. payment</div>
+            </div>
+            <div class="data-item">
+              <div class="price-value">-- %</div>
+              <div class="price-label">Today's rate</div>
+            </div>
+            <div class="data-item">
+              <div class="price-value">-- %</div>
+              <div class="price-label">APR</div>
+            </div>
+          </div>
+
+          <button>Let's get started</button>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slider-track">
+              <div class="slide">
+                <img
+                  src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/10/2017_ZillowExteriors_218-1.jpg"
+                  alt="House 1"
+                />
+                <div class="buyability-tag">Within BuyAbility</div>
+                <div class="slide-content">
+                  <div class="placeholder-line"></div>
+                  <div class="placeholder-line short"></div>
+                  <div style="height: 20px"></div>
+                  <div class="placeholder-line"></div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/10/GettyImages-472069091-Edit.jpg"
+                  alt="House 2"
+                />
+                <div class="buyability-tag">Within BuyAbility</div>
+                <div class="slide-content">
+                  <div class="placeholder-line"></div>
+                  <div class="placeholder-line short"></div>
+                  <div style="height: 20px"></div>
+                  <div class="placeholder-line"></div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/10/shutterstock_529108441.jpg"
+                  alt="House 3"
+                />
+                <div class="buyability-tag">Within BuyAbility</div>
+                <div class="slide-content">
+                  <div class="placeholder-line"></div>
+                  <div class="placeholder-line short"></div>
+                  <div style="height: 20px"></div>
+                  <div class="placeholder-line"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="homes-slider"></div>
+      </div>
+    </div>
+    <section class="features-cards">
+      <div class="feature-card">
+        <div class="card-img">
+          <img
+            src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-agent-lg.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="feature-text">
+          <h1>Buy a home</h1>
+          <p>
+            A real estate agent can provide you with a clear breakdown of costs
+            so that you can avoid surprise expenses.
+          </p>
+
+          <button class="btn">Find a local agent</button>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="card-img">
+          <img
+            src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-sell-lg.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="feature-text">
+          <h1>Sell a home</h1>
+          <p>
+            No matter what path you take to sell your home, we can help you
+            navigate a successful sale.
+          </p>
+
+          <button class="btn">See your options</button>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="card-img">
+          <img
+            src="https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-rent-lg.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="feature-text">
+          <h1>Rent a home</h1>
+          <p>
+            We’re creating a seamless online experience – from shopping on the
+            largest rental network, to applying, to paying rent
+          </p>
+
+          <button class="btn">Find Rentals</button>
+        </div>
       </div>
     </section>
+    <section class="footer">
+      <div class="footer-main-text">
+        <h4>About Zillow's Recommendations</h4>
+        <p>Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used. We use this information to bring similar homes to your attention, so you don't miss out.</p>
+      </div>
+      <div class="dropdown-list">
+        <div class="dropdown">
+          <button class="dropdown-toggle">Real Estate <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></button>
+            <ul class="dropdown-menu">
+              <li>Chicago real estate</li>
+              <li>Cleveland real estate</li>
+              <li>Colorado Springs real estate</li>
+              <li>Columbus real estate</li>
+              <li>Dallas real estate</li>
+              <li>Denver real estate</li>
+              <li>Detroit real estate</li>
+              <li>Edmonton real estate</li>
+              <li>El Paso real estate</li>
+              <li>Fort Worth real estate</li>
+              <li>Fresno real estate</li>
+              <li>Houston real estate</li>
+              <li>Indianapolis real estate</li>
+              <li>Jacksonville real estate</li>
+              <li>Kansas City real estate</li>
+              <li>Las Vegas real estate</li>
+              <li>Long Beach real estate</li>
+              <li>Los Angeles real estate</li>
+              <li>Louisville real estate</li>
+              <li>Memphis real estate</li>
+              <li>Mesa real estate</li>
+              <li>Miami real estate</li>
+              <li>Milwaukee real estate</li>
+              <li>Minneapolis real estate</li>
+              <li>Nashville real estate</li>
+              <li>New Orleans real estate</li>
+              <li>New York real estate</li>
+              <li>Oakland real estate</li>
+              <li>Oklahoma real estate</li>
+              <li>Omaha real estate</li>
+              <li>Ottawa real estate</li>
+              <li>Philadelphia real estate</li>
+              <li>Phoenix real estate</li>
+              <li>Portland real estate</li>
+              <li>Raleigh real estate</li>
+              <li>Sacramento real estate</li>
+              <li>San Antonio real estate</li>
+              <li>San Diego real estate</li>
+              <li>San Francisco real estate</li>
+              <li>San Jose real estate</li>
+              <li>Seattle real estate</li>
+              <li>Toronto real estate</li>
+              <li>Tucson real estate</li>
+              <li>Tulsa real estate</li>
+              <li>Vancouver real estate</li>
+              <li>Virginia Beach real estate</li>
+              <li>Washington DC real estate</li>
+              <li>Wichita real estate</li>
+            </ul>
+            
+        </div>
+        <span class="side-line"></span>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Rentals <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></button>
+            <ul class="dropdown-menu">
+              <li>Atlanta apartments for rent</li>
+              <li>Austin apartments for rent</li>
+              <li>Baltimore apartments for rent</li>
+              <li>Boston apartments for rent</li>
+              <li>Bronx NYC apartments for rent</li>
+              <li>Brooklyn NYC apartments for rent</li>
+              <li>Charlotte apartments for rent</li>
+              <li>Chicago apartments for rent</li>
+              <li>Dallas apartments for rent</li>
+              <li>Denver apartments for rent</li>
+              <li>Houston apartments for rent</li>
+              <li>Jersey City apartments for rent</li>
+              <li>Long Beach apartments for rent</li>
+              <li>Manhattan NYC apartments for rent</li>
+              <li>Miami apartments for rent</li>
+              <li>Minneapolis apartments for rent</li>
+              <li>New York City apartments for rent</li>
+              <li>Oakland apartments for rent</li>
+              <li>Oklahoma City apartments for rent</li>
+              <li>Philadelphia apartments for rent</li>
+              <li>Queens NYC apartments for rent</li>
+              <li>Sacramento apartments for rent</li>
+              <li>San Francisco apartments for rent</li>
+              <li>Seattle apartments for rent</li>
+              <li>Washington DC apartments for rent</li>
+              <li>Atlanta houses for rent</li>
+              <li>Austin houses for rent</li>
+              <li>Boston houses for rent</li>
+              <li>Charlotte houses for rent</li>
+              <li>Columbus houses for rent</li>
+              <li>Fort Worth houses for rent</li>
+              <li>Fresno houses for rent</li>
+              <li>Houston houses for rent</li>
+              <li>Indianapolis houses for rent</li>
+              <li>Jacksonville houses for rent</li>
+              <li>Las Vegas houses for rent</li>
+              <li>Memphis houses for rent</li>
+              <li>Milwaukee houses for rent</li>
+              <li>Nashville houses for rent</li>
+              <li>Oakland houses for rent</li>
+              <li>Oklahoma City houses for rent</li>
+              <li>Philadelphia houses for rent</li>
+              <li>Phoenix houses for rent</li>
+              <li>Portland houses for rent</li>
+              <li>San Antonio houses for rent</li>
+              <li>San Francisco houses for rent</li>
+              <li>San Jose houses for rent</li>
+              <li>Tampa houses for rent</li>
+              <li>Tucson houses for rent</li>
+              <li>Washington DC houses for rent</li>
+            </ul>
+            
+        </div>
+        <span class="side-line"></span>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Mortgage Rates <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></button>
+            <ul class="dropdown-menu">
+              <li>Alaska mortgage rates</li>
+              <li>Alabama mortgage rates</li>
+              <li>Arkansas mortgage rates</li>
+              <li>Arizona mortgage rates</li>
+              <li>California mortgage rates</li>
+              <li>Colorado mortgage rates</li>
+              <li>Connecticut mortgage rates</li>
+              <li>Delaware mortgage rates</li>
+              <li>Florida mortgage rates</li>
+              <li>Georgia mortgage rates</li>
+              <li>Hawaii mortgage rates</li>
+              <li>Iowa mortgage rates</li>
+              <li>Idaho mortgage rates</li>
+              <li>Illinois mortgage rates</li>
+              <li>Indiana mortgage rates</li>
+              <li>Kansas mortgage rates</li>
+              <li>Kentucky mortgage rates</li>
+              <li>Louisiana mortgage rates</li>
+              <li>Massachusetts mortgage rates</li>
+              <li>Maryland mortgage rates</li>
+              <li>Maine mortgage rates</li>
+              <li>Michigan mortgage rates</li>
+              <li>Minnesota mortgage rates</li>
+              <li>Missouri mortgage rates</li>
+              <li>Mississippi mortgage rates</li>
+              <li>Montana mortgage rates</li>
+              <li>North Carolina mortgage rates</li>
+              <li>North Dakota mortgage rates</li>
+              <li>Nebraska mortgage rates</li>
+              <li>New Hampshire mortgage rates</li>
+              <li>New Jersey mortgage rates</li>
+              <li>New Mexico mortgage rates</li>
+              <li>Nevada mortgage rates</li>
+              <li>New York mortgage rates</li>
+              <li>Ohio mortgage rates</li>
+              <li>Oklahoma mortgage rates</li>
+              <li>Oregon mortgage rates</li>
+              <li>Pennsylvania mortgage rates</li>
+              <li>Rhode Island mortgage rates</li>
+              <li>South Carolina mortgage rates</li>
+              <li>South Dakota mortgage rates</li>
+              <li>Tennessee mortgage rates</li>
+              <li>Texas mortgage rates</li>
+              <li>Utah mortgage rates</li>
+              <li>Virginia mortgage rates</li>
+              <li>Vermont mortgage rates</li>
+              <li>Washington mortgage rates</li>
+              <li>Wisconsin mortgage rates</li>
+              <li>West Virginia mortgage rates</li>
+              <li>Wyoming mortgage rates</li>
+            </ul>
+            
+        </div>
+        <span class="side-line"></span>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Browse Homes <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></button>
+            <ul class="dropdown-menu">
+              <li>California</li>
+              <li>Texas</li>
+              <li>New York</li>
+              <li>Florida</li>
+              <li>Illinois</li>
+              <li>Pennsylvania</li>
+              <li>Ohio</li>
+              <li>Michigan</li>
+              <li>Georgia</li>
+              <li>North Carolina</li>
+              <li>New Jersey</li>
+              <li>Virginia</li>
+              <li>Washington</li>
+              <li>Massachusetts</li>
+              <li>Indiana</li>
+              <li>Arizona</li>
+              <li>Tennessee</li>
+              <li>Missouri</li>
+              <li>Maryland</li>
+              <li>Wisconsin</li>
+              <li>Minnesota</li>
+              <li>Colorado</li>
+              <li>Alabama</li>
+              <li>South Carolina</li>
+              <li>Louisiana</li>
+              <li>Kentucky</li>
+              <li>Oregon</li>
+              <li>Oklahoma</li>
+              <li>Connecticut</li>
+              <li>Iowa</li>
+              <li>Mississippi</li>
+              <li>Arkansas</li>
+              <li>Kansas</li>
+              <li>Utah</li>
+              <li>Nevada</li>
+              <li>New Mexico</li>
+              <li>West Virginia</li>
+              <li>Nebraska</li>
+              <li>Idaho</li>
+              <li>Hawaii</li>
+              <li>Maine</li>
+              <li>New Hampshire</li>
+              <li>Rhode Island</li>
+              <li>Montana</li>
+              <li>Delaware</li>
+              <li>South Dakota</li>
+              <li>Alaska</li>
+              <li>North Dakota</li>
+              <li>Vermont</li>
+              <li>Washington, DC</li>
+              <li>Wyoming</li>
+              <li>Puerto Rico</li>
+              <li>Virgin Islands</li>
+            </ul>
+            
+        </div>
+      </div>
+      <footer>
+        <hr class="horizontal-line" />
+        <div class="footer-nav">
+          <ul class="footer-links">
+            <li>About</li>
+            <li>Zestimates</li>
+            <li>Research</li>
+            <li>Careers</li>
+            <li>Careers - U.S. Privacy Notice</li>
+            <li>Careers - Mexico Privacy Notice</li>
+            <li>Help</li>
+            <li>Advertise</li>
+            <li>Fair Housing Guide</li>
+            <li>Advocacy</li>
+            <li>Terms of use</li>
+            <li>Privacy Notice</li>
+            <li>Cookie Preference</li>
+            <li>Learn</li>
+            <li>AI</li>
+            <li>Mobile Apps</li>
+            <li>Trulia</li>
+            <li>StreetEasy</li>
+            <li>HotPads</li>
+            <li>Out East</li>
+            <li>ShowingTime+</li>
+          </ul>
+          <p>Do Not Sell or Share My Personal Information
+            →</p>
+        </div>
+        <hr class="horizontal-line" />
+      </footer>
+      <div class="footer-text">
+        <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities. We are continuously working to improve the accessibility of our web experience for everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek an accommodation, please let us know.</p>
+        <p>Zillow, Inc. holds real estate brokerage licenses in multiple states. Zillow (Canada), Inc. holds real estate brokerage licenses in multiple provinces.
+          § 442-H New York Standard Operating Procedures
+          § New York Fair Housing Notice
+          TREC: Information about brokerage services, Consumer protection notice
+          California DRE #1522444</p>
+
+          <a href="#" class="contact">Contact Zillow, Inc. Brokerage</a>
+          <p>For listings in Canada, the trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA. Used under license.</p>
+
+          <div class="store-badges">
+            <img src="https://www.zillowstatic.com/s3/pfs/static/app-store-badge.svg" alt="App Store">
+            <img src="https://www.zillowstatic.com/s3/pfs/static/google-play-badge.svg" alt="Google Play">
+          </div>
+        
+          <div>
+            <img src="https://www.zillowstatic.com/s3/pfs/static/z-logo-default-visual-refresh.svg" alt="Zillow Logo">
+          </div>
+      </div>
+    </section>
+
+    <script>
+      const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+          const dropdown = toggle.closest('.dropdown');
+          dropdown.classList.toggle('show');
+              
+          document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) d.classList.remove('show');
+          });
+              
+          e.stopPropagation();
+        });
+      });
+          
+      window.addEventListener('click', () => {
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
+      });
+    </script>
+    
+    
   </body>
 </html>
