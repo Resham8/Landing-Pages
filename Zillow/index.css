@@ -12,14 +12,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 20px;
   background-color: #f8f8f8;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  height: 60px;
+  height: auto;
   z-index: 1000;
 }
 
@@ -27,17 +27,85 @@ nav {
   display: flex;
   list-style: none;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.nav-links li {
-  cursor: pointer;
-  font-size: 16px;
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-logo img {
   height: 30px;
 }
 
+/* Mobile navigation toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hidden by default */
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 2000;
+  overflow-y: auto;
+  padding-top: 60px;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar .nav-links li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1900;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
@@ -48,6 +116,8 @@ nav {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  min-height: 300px;
 }
 
 .hero-content {
@@ -58,12 +128,14 @@ nav {
   padding: 20px;
   border-radius: 5px;
   color: white;
+  width: 80%;
+  max-width: 500px;
 }
 
 .hero-content h1 {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 900;
-  line-height: 72px;
+  line-height: 1.2;
   white-space: pre-line;
   color: white;
 }
@@ -73,7 +145,8 @@ nav {
   background: white;
   padding: 10px;
   border-radius: 5px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .search-box input {
@@ -83,38 +156,38 @@ nav {
   font-size: 16px;
 }
 
-.search-box input:focus {
-  border: none;
-}
-
+/* Recommendation Section */
 .recomdation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 20px;
-  gap: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .rec-text {
   flex: 1;
-  max-width: 500px;
+  min-width: 280px;
 }
 
 .rec-text h1 {
-  font-size: 32px;
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
 .rec-text p {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
 .rec-img {
   flex: 1;
-  max-width: 500px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
@@ -125,11 +198,7 @@ nav {
   color: blue;
   background: none;
   cursor: pointer;
-}
-
-.btn:hover {
-  background: rgba(135, 146, 231, 0.2);
-  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 17px 70px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
 }
 
 .rec-img img {
@@ -138,21 +207,23 @@ nav {
   border-radius: 10px;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #2a2a33;
   margin-bottom: 8px;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 1rem;
   color: #5c6670;
   margin-bottom: 24px;
 }
@@ -161,6 +232,7 @@ h1 {
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Card styling */
@@ -169,8 +241,9 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 24px;
-  width: 380px;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 20px auto;
 }
 
 .zillow-logo {
@@ -183,21 +256,24 @@ h1 {
   margin-bottom: 24px;
   border-bottom: 1px solid #e8e9eb;
   padding-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .price-item {
   text-align: left;
+  min-width: 120px;
 }
 
 .price-value {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #2a2a33;
   margin-bottom: 4px;
 }
 
 .price-label {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #5c6670;
 }
 
@@ -205,10 +281,13 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .data-item {
   text-align: left;
+  min-width: 90px;
 }
 
 .card button {
@@ -228,7 +307,8 @@ h1 {
 .slider-container {
   flex: 1;
   overflow: hidden;
-  position: relative;  
+  position: relative;
+  min-width: 300px;
 }
 
 .slider {
@@ -246,11 +326,12 @@ h1 {
   display: flex;
   gap: 16px;
   width: fit-content;
-  padding-bottom: 16px;  
+  padding-bottom: 16px;
 }
 
 .slide {
-  min-width: 320px;
+  min-width: 280px;
+  max-width: 320px;
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
@@ -292,12 +373,13 @@ h1 {
   width: 70%;
 }
 
+/* Features Cards */
 .features-cards {
   background-color: rgb(247, 247, 247);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  padding: 7rem;
+  padding: 3rem 1rem;
 }
 
 .feature-card {
@@ -307,17 +389,16 @@ h1 {
   flex-direction: column;
   text-align: center;
   border-radius: 20px;
-  padding: 2rem;
-  
+  padding: 1.5rem;
 }
 
 .card-img img {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
 }
 
 .card-img {
-  -webkit-box-pack: center;
   justify-content: center;
   display: flex;
   height: auto;
@@ -325,8 +406,8 @@ h1 {
 
 .feature-text p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
   color: rgb(17, 17, 22);
 }
@@ -339,12 +420,9 @@ h1 {
 
 .feature-text h1 {
   color: rgb(17, 17, 22);
-  -webkit-font-smoothing: antialiased;
-    text-transform: none;
-    font-family: "Object Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 .feature-text button {
@@ -352,17 +430,20 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Dropdown List */
 .dropdown-list {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
-  gap:70px
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  margin: 10px 0;
 }
 
 .dropdown-toggle {
@@ -370,34 +451,54 @@ h1 {
   border: none;
   font-size: 16px;
   cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;                      
+  left: 50%;
   transform: translateX(-50%);
-  background: white;  
+  background: white;
   list-style: none;
   padding: 10px 0;
   margin: 0;
-  min-width: 350px;
+  min-width: 280px;
+  max-width: 350px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .dropdown-menu li {
   padding: 8px 16px;
   cursor: pointer;
+  font-size: 14px;
 }
-
 
 .dropdown.show .dropdown-menu {
   display: block;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
+}
+
+.footer-main-text {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main-text h4 {
+  margin-bottom: 0.7rem;
 }
 
 .side-line {
@@ -410,9 +511,9 @@ h1 {
 .horizontal-line {
   border: none;
   height: 1px;
-  background-color: #aaa;   
-  width: 70%;
-  margin: 2rem auto;
+  background-color: #aaa;
+  width: 90%;
+  margin: 1.5rem auto;
 }
 
 .footer-nav {
@@ -427,7 +528,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px 25px;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -440,6 +541,7 @@ h1 {
   color: #555;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding: 3px 10px;
 }
 
 .footer-links li:hover {
@@ -450,19 +552,14 @@ h1 {
   font-size: 14px;
   color: #0073e6;
   cursor: pointer;
-  transition: text-decoration 0.3s ease;
   margin: 0;
-}
-
-.footer-nav p:hover {
-  text-decoration: underline;
+  padding: 10px;
 }
 
 .footer-text {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
+  padding: 20px;
   font-size: 14px;
   line-height: 1.6;
   color: #555;
@@ -477,37 +574,133 @@ h1 {
   color: #0073e6;
   text-decoration: none;
   font-weight: bold;
-  transition: text-decoration 0.3s ease;
-}
-
-.footer-text a.contact:hover {
-  text-decoration: underline;
+  padding: 5px;
 }
 
 .footer-text img {
   max-height: 40px;
   margin: 10px;
-  transition: transform 0.3s ease;
 }
 
-.footer-text img:hover {
-  transform: scale(1.05);
-}
-
-.footer-text > div {
-  margin-top: 20px;
+.store-badges {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
-
-.footer-main-text {
-  padding-left:6rem ;
-  padding-right:6rem ;
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .features-cards {
+    padding: 2rem 1rem;
+  }
+  
+  .dropdown-list {
+    gap: 10px;
+  }
+  
+  .side-line {
+    display: none;
+  }
 }
 
-.footer-main-text h4 {
-  margin-bottom: .7rem;
+@media (max-width: 888px) {
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: flex-end; 
+    padding: 10px 15px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+    order: 2; 
+  }
+  
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mobile-menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .rec-text h1 {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .features-cards {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+  
+  .dropdown-menu {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content {
+    left: 5%;
+    width: 90%;
+    top: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  .search-box {
+    max-width: 100%;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .price-value {
+    font-size: 1.3rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+  }
+  
+  .feature-text h1 {
+    font-size: 1.3rem;
+  }
+  
+  .dropdown-toggle {
+    font-size: 14px;
+  }
+  
+  .footer-main-text {
+    padding: 1rem 0.5rem;
+  }
+  
+  .footer-text {
+    padding: 15px;
+  }
 }
