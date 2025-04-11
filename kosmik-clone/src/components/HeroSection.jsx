@@ -1,7 +1,10 @@
 function HeroSection() {
   return (
     <>
-      <div className="intro-container">        
+      <div className="intro-container">
+        <div className="rocket">
+          <img src="https://framerusercontent.com/images/0HeL3MJb1CyAGv7t0wZ4Gh6vl4.svg" alt="" />
+        </div>
         <div className="intro-heading">
           <h1>
             <span class="heading-part-1">The best browser for</span>
