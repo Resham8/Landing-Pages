@@ -1,7 +1,9 @@
 import "./App.css";
+import Download from "./components/Download";
 import Features from "./components/Features";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <NavBar />
       <main>
         <HeroSection />  
-        <Features/>      
+        <Features/>
+        <Testimonials/>
+        <Download/>      
       </main>
     </div>
   );

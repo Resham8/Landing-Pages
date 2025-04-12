@@ -239,6 +239,12 @@ main {
 
 /* features */
 
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .features-container {
   align-items: center;
   display: flex;
@@ -264,12 +270,12 @@ main {
 }
 
 .feature-title h1 {
+  color: rgb(60, 60, 60);
   font-size: 40px;
   font-family: "GillSans-SemiBold", sans-serif;
   line-height: 1em;
   text-align: center;
   font-weight: 400;
-  color: rgb(60, 60, 60);
 }
 
 .custom-video {
@@ -358,4 +364,121 @@ main {
   line-height: 24px;
   color: #f57127;
   text-align: center;
+}
+
+/* testimonials */
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 1700px;
+}
+
+.testimonials-heading h1 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 400;
+  color: rgb(60, 60, 60);
+  font-family: "GillSans-SemiBold", sans-serif;
+}
+
+.testimonials-subheading p {
+  font-family: sans-serif;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(60, 60, 60);
+}
+
+.testimonials {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 60px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 24px 40px;
+  position: relative;
+  width: 97%;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  max-width: 100%;
+  width: 1000px;
+}
+
+.testimonial-card {
+  align-items: center;
+  align-self: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0.7961918735236395px 2.3885756205709185px -0.625px #0000000d,
+    0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d,
+    0 6.382653521484461px 19.147960564453385px -1.875px #0000000d,
+    0 20px 60px -2.5px #0000000d;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  justify-content: flex-start;
+  justify-self: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.user-details {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 260px;
+}
+
+.user-details h3{
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.4em;
+  text-align: left;
+  color: rgb(0, 17, 34);
+}
+
+.user-details p{
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: left;
+  color: rgb(102, 102, 102);
+}
+
+.user-testimonial p{
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-weight: 500;
+  line-height: 1.6em;
+  text-align: left;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
 }
