@@ -491,7 +491,6 @@ main {
   gap: 40px;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 64px 24px;
 }
 
 .download-heading {
@@ -642,7 +641,6 @@ main {
   padding: 16px;
   position: relative;
   width: 100%;
-  margin-bottom: 1000px;
 }
 
 .FnQ-heading {
@@ -735,12 +733,12 @@ main {
 
 .anwser-description {
   align-items: flex-start;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 19px;
   height: min-content;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   padding: 0 0 0 42px;
   position: relative;
   width: 100%;
@@ -750,4 +748,107 @@ main {
   line-height: 24px;
   color: rgb(60, 60, 60);
   font-size: 16px;
+}
+
+/* footer  */
+
+footer {
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  position: relative;
+  overflow: visible;
+  padding: 22px;
+  width: 100%;
+  z-index: 0;
+}
+
+.footer-container {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: min-content;
+  justify-content: space-between;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 960px;
+  z-index: 1;
+}
+
+.footer-list {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-list p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(61, 61, 61);
+}
+
+.footer-list a {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  color: rgb(106, 106, 106);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-list a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.footer-img {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.footer-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* eiffle tower */
+
+.eiffle-tower {
+  position: absolute;
+  top: -71px;
+  right: -84px;
+  width: 135px;
+  z-index: 2;
+}
+
+.eiffle-tower img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
