@@ -625,3 +625,129 @@ main {
 .download-button:hover {
   background-color: rgb(225, 93, 19);
 }
+
+/* F and Q section */
+
+.FnQ-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1000px;
+}
+
+.FnQ-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.FnQ-heading h1 {
+  font-family: "GillSans-SemiBold", sans-serif;
+  font-size: 40px;
+  line-height: 1em;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  font-weight: 400;
+}
+
+.FnQ-List {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 23px;
+  height: min-content;
+  justify-content: flex-start;
+  max-width: 900px;
+  padding: 0;
+  position: relative;
+  width: 60%;
+}
+
+.FnQ-List-Item {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6px;
+  height: min-content;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.question-container {
+  align-content: center;
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  height: 38px;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0 12px;
+  position: relative;
+  width: 100%;
+}
+
+.question-no {
+  flex: none;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.ellipse {
+  background-color: #f57127;
+  border-radius: 100%;
+  flex: none;
+}
+
+.ellipse p {
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.question p {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 36px;
+  color: rgb(60, 60, 60);
+}
+
+.anwser-description {
+  align-items: flex-start;
+  display: flex;  
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 19px;
+  height: min-content;
+  justify-content: flex-start;  
+  padding: 0 0 0 42px;
+  position: relative;
+  width: 100%;
+}
+
+.anwser-description p {
+  line-height: 24px;
+  color: rgb(60, 60, 60);
+  font-size: 16px;
+}

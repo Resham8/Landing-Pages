@@ -1,6 +1,7 @@
 import "./App.css";
 import Download from "./components/Download";
 import Features from "./components/Features";
+import FrequentlyAskedQs from "./components/FrequentlyAskedQs";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import Testimonials from "./components/Testimonials";
@@ -13,7 +14,8 @@ function App() {
         <HeroSection />  
         <Features/>
         <Testimonials/>
-        <Download/>      
+        <Download/>  
+        <FrequentlyAskedQs/>    
       </main>
     </div>
   );
